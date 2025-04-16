@@ -14,7 +14,6 @@ A Python project that collects tweets from influential AI and robotics accounts,
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Troubleshooting & Limitations](#troubleshooting--limitations)
-- [License](#license)
 - [Credits](#credits)
 
 ---
