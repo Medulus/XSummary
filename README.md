@@ -21,7 +21,7 @@ A Python project that collects tweets from influential AI and robotics accounts,
 
 ## Overview
 
-The AI & Robotics Newsletter Generator automates the process of aggregating tweets from selected Twitter (X) accounts across the AI and robotics industry. It then leverages OpenAI's ChatGPT API (currently using the `gpt-3.5-turbo` model) to summarize these tweets into a coherent newsletter. Finally, it outputs the newsletter in both Markdown and PDF formats.
+The AI & Robotics Newsletter Generator automates the process of aggregating tweets from selected Twitter (X) accounts across the AI and robotics industry. It then leverages OpenAI's ChatGPT API (currently using the `gpt-4o-mini` model) to summarize these tweets into a coherent newsletter. Finally, it outputs the newsletter in both Markdown and PDF formats.
 
 The project consists of two main scripts:
 
@@ -154,7 +154,7 @@ The script will:
   Ensure you are within your Twitter API usage limits. The script includes basic rate-limiting measures (batching, sleeps, exponential backoff in some versions), but you may need to fine-tune these delays based on your usage.
 
 - **Model Deprecation:**  
-  Make sure you're using an active OpenAI model (currently `gpt-3.5-turbo` is recommended). Update the model parameter in `csvtopdf.py` if necessary.
+  Make sure you're using an active OpenAI model (currently `gpt-4o-mini` is recommended). Update the model parameter in `csvtopdf.py` if necessary.
 
 - **CSV Format:**  
   The CSV file must have the columns: `User`, `Tweet`, and `Created At` for the newsletter generator to function properly.
@@ -168,7 +168,7 @@ The script will:
   Implemented using Tweepy and the Twitter API v2.
 
 - **Newsletter Generation:**  
-  Powered by OpenAI's ChatGPT API (`gpt-3.5-turbo`).
+  Powered by OpenAI's ChatGPT API (`gpt-4o-mini`).
 
 - **PDF Generation:**  
   Created using the FPDF library.
